@@ -191,12 +191,17 @@
 	"https://*.on24.com/view/*",
     "https://*.meetme.com/*",
     "https://meetme.com/*",
-	"https://fansly.com/chatroom/*"
+	"https://fansly.com/chatroom/*",
+    "https://www.moonbeam.stream/stream-moderation/*"
   ],
   "content_scripts": [
     {
       "js": [ "./sources/generic.js" ],
       "matches": [ "https://versus.cam/?testchat" ]
+    },	  
+    {
+      "js": [ "./sources/moonbeam.js" ],
+      "matches": [ "https://www.moonbeam.stream/stream-moderation/*" ]
     },
     {
       "js": [ "./sources/zapstream.js" ],
